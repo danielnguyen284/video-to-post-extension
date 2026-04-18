@@ -9,7 +9,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
 });
 
 async function startSequence(url) {
-    const prompt1 = `Xin chào. Đây là nội dung tôi cần bạn giúp. Vui lòng ĐỌC transcript của video YouTube sau (nếu xem được) hoặc dựa vào TÊN và MÔ TẢ của link để TRÍCH XUẤT NỘI DUNG CHÍNH. Sau đó, hãy viết một bài đăng Facebook dài 500-1000 chữ. Yêu cầu cấu trúc bài viết (Phải có đủ 5 phần này): 1. Câu HOOK VIẾT HOA thu hút sự chú ý. 2. Giới thiệu nguồn/kênh. 3. Nội dung chính. 4. Nhận định cá nhân sâu sắc của bạn. 5. Kết luận hướng người đọc xuống phần bình luận để lấy link video. Link video: ${url}`;
+    const prompt1 = `Xin chào. Đây là nội dung tôi cần bạn giúp. Vui lòng ĐỌC transcript của video YouTube sau (nếu xem được) hoặc dựa vào TÊN và MÔ TẢ của link để TRÍCH XUẤT NỘI DUNG CHÍNH. Sau đó, hãy viết một bài đăng Facebook với độ dài ngắn gọn, súc tích (khoảng 200 - 300 chữ), văn phong tự nhiên, chia sẻ cá nhân (xưng "mình - bạn/anh em", giọng điệu đam mê công nghệ). Yêu cầu cấu trúc bài viết (Phải có đủ 5 phần này): 1. Câu HOOK thu hút sự chú ý một cách tự nhiên (có thể so sánh, bắt trend). 2. Giới thiệu nguồn/kênh khéo léo. 3. Nội dung chính: Tóm tắt điểm đột phá (dùng bullet point với icon như ✅ để trình bày rõ). 4. Nhận định cá nhân sâu sắc của bạn. 5. Kết luận hướng người đọc xuống bình luận để lấy link video. Link video: ${url}`;
 
     const prompt2 = `Tuyệt vời, cảm ơn phần nội dung của bạn. Bây giờ, hãy tạo một bức ảnh minh họa duy nhất phản ánh nội dung chính của bài viết bạn vừa tạo. Kích thước ngang (tỷ lệ 16:9) để phù hợp đăng lên Facebook nhé.`;
 
